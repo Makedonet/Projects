@@ -1,0 +1,251 @@
+body {
+    font-family: 'Open sans', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(78, 192, 254, 1);
+    background: -moz-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 142, 218, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78, 192, 254, 1)), color-stop(100%, rgba(55, 142, 218, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 142, 218, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 142, 218, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 142, 218, 1) 100%);
+    background: linear-gradient(135deg, rgba(78, 192, 254, 1) 0%, rgba(55, 142, 218, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ec0fe', endColorstr='#378eda', GradientType=1);
+    padding-top: 60px;
+    color: white;
+    padding-bottom: 140px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer {
+    margin-top: 145px;
+    width: 565px;
+}
+
+.title {
+    font-size: 37px;
+    margin-bottom: 45px;
+}
+
+.title span {
+    font-size: 59px;
+}
+
+.intro {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 45px;
+    width: 401px;
+    line-height: 27px;
+}
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    background: #ffd429;
+    color: #000;
+    display: block;
+    width: 222px;
+    padding: 20px 0;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: #c3a21f ;
+}
+
+.travel {
+    margin-top: 30px;
+}
+
+.future {
+    padding-top: 105px;
+    padding-bottom: 119px;
+}
+
+.section-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.intresting {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.time {
+    width: 300px;
+    background: url('../img/icon1.jpg') no-repeat top;
+    padding-top: 90px;
+}
+
+.time-title {
+    font-size: 19px;
+    text-align: center;
+}
+
+.time-text {
+    text-align: center;
+}
+
+.time-bright {
+    width: 275px;
+    background: url('../img/icon2.jpg') no-repeat top;
+}
+
+.time-values {
+    background: url('../img/icon3.jpg') no-repeat top;
+}
+
+.mail {
+    background: #ecf3f8;
+    padding: 100px;
+}
+
+.form {
+    width: 345px;
+    margin: 0 auto;
+    padding-top: 57px;
+}
+
+.input {
+    margin-bottom: 15px;
+    width: 340px;
+    padding: 20px 20px 20px 25px;
+    border: 1px solid #bbb;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+.btn-2 {
+    width: 340px;
+    border: 0;
+    cursor: pointer;
+}
+
+.credits {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.footer {
+    background: #164d7a;
+    padding: 60px;
+}
+
+.green {
+    color: rgb(16, 141, 16);
+}
+
+.animate__animated {
+    opacity: 0;
+}
+
+/* Responsive */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .travel {
+        width: 575px;
+    }
+    .mail {
+        padding: 100px 0px;
+    }
+    .footer {
+        padding: 60px 0px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .offer {
+        width: 100%;
+    }
+    .intro {
+        width: 100%;
+    }
+    .travel {
+        display: block;
+        width: 641px;
+        margin: 30px auto 0;
+    }
+    .intresting {
+        flex-direction: column;
+        align-items: center;
+    }
+    .time {
+        margin-bottom: 30px;
+    }
+    .mail {
+        padding: 100px 0px;
+    }
+    .footer {
+        padding: 60px 0px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .travel {
+        width: 100%;
+    }
+    .mail {
+        padding: 100px 0px;
+    }
+    .footer {
+        padding: 60px 0px;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .form {
+        width: 100%;
+    }
+    .input {
+        width: 100%;
+    }
+    .btn-2 {
+        width: 100%;
+    }
+}
