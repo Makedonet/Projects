@@ -1,10 +1,4 @@
-// var user = {
-//     'name' : 'Max',
-//     'surname' : 'Medvedev',
-//     'age' : 20
-// }
 
-// alert (user.name)
 
 var btn = document.getElementById('btn')
 btn.onclick = function () {
