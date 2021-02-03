@@ -24,8 +24,6 @@
       exit();
     }
 
-    $password = md5($password);
-
     $sql = "INSERT INTO users (name, email, phone, country)
     VALUES ('$name', '$email', '$phone', '$country')";
 
