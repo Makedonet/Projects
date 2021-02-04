@@ -8,7 +8,7 @@ $country = filter_var(trim($_POST['country']), FILTER_SANITIZE_STRING);
 $servername = "localhost";
 $username = "root";
 $password = "root";
-$dbname = "max-bd";
+$dbname = "max";
 
 $connection = mysqli_connect($servername, $username, $password, $dbname);
 
