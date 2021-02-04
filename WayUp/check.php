@@ -28,7 +28,7 @@
     VALUES ('$name', '$email', '$phone', '$country')";
 
     if ($connection->query($sql) === TRUE) {
-    header("Location: index.html?success=Your account has been created successfully");
+    header("Location: http://localhost:8888/Новая%20папка/");
     } else {
     echo "Error: " . $sql . "<br>" . $connection->error;
     }
