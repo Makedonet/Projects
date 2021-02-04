@@ -1,38 +1,35 @@
 <?php
 
-    $name = filter_var(trim($_POST['name']), FILTER_SANITIZE_STRING);
-    $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_STRING);
-    $phone = filter_var(trim($_POST['phone']), FILTER_SANITIZE_STRING);
-    $country = filter_var(trim($_POST['country']), FILTER_SANITIZE_STRING);
+$name = filter_var(trim($_POST['name']), FILTER_SANITIZE_STRING);
+$email = filter_var(trim($_POST['email']), FILTER_SANITIZE_STRING);
+$phone = filter_var(trim($_POST['phone']), FILTER_SANITIZE_STRING);
+$country = filter_var(trim($_POST['country']), FILTER_SANITIZE_STRING);
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "root";
-    $dbname = "register-bd";
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "max-bd";
 
-    $connection = mysqli_connect($servername, $username, $password, $dbname);
+$connection = mysqli_connect($servername, $username, $password, $dbname);
 
-    if($connection == false)
-    {
-      echo "Connection failed!";
-      echo mysqli_connect_error();
-      exit();
-    }
+if ($connection == false) {
+  echo "Connection failed!";
+  echo mysqli_connect_error();
+  exit();
+}
 
-    if(mb_strlen($name) < 5 || mb_strlen($name) > 90) {
-      echo "Недопустимая длина имени";
-      exit();
-    }
+if (mb_strlen($name) < 5 || mb_strlen($name) > 90) {
+  echo "Недопустимая длина имени";
+  exit();
+}
 
-    $sql = "INSERT INTO users (name, email, phone, country)
+$sql = "INSERT INTO users (name, email, phone, country)
     VALUES ('$name', '$email', '$phone', '$country')";
 
-    if ($connection->query($sql) === TRUE) {
-    header("Location: http://localhost:8888/Новая%20папка/");
-    } else {
-    echo "Error: " . $sql . "<br>" . $connection->error;
-    }
+if ($connection->query($sql) === TRUE) {
+  header("Location: http://localhost:3306/WayUp/ДЗ_3_4_5/");
+} else {
+  echo "Error: " . $sql . "<br>" . $connection->error;
+}
 
-    $connection->close();
-
-?>
+$connection->close();
